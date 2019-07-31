@@ -1,22 +1,17 @@
 package com.ravi.springbootdemo.entity;
 
-public class Address {
+import javax.persistence.Embeddable;
+import java.io.Serializable;
 
-    private String addressId;
+@Embeddable
+public class Address implements Serializable {
+
     private String unit;
     private String street;
     private String suburb;
     private String postCode;
     private String State;
     private String country;
-
-    public String getAddressId() {
-        return addressId;
-    }
-
-    public void setAddressId(String addressId) {
-        this.addressId = addressId;
-    }
 
     public String getUnit() {
         return unit;
@@ -69,8 +64,7 @@ public class Address {
     @Override
     public String toString() {
         return "Address{" +
-                "addressId='" + addressId + '\'' +
-                ", unit='" + unit + '\'' +
+                "unit='" + unit + '\'' +
                 ", street='" + street + '\'' +
                 ", suburb='" + suburb + '\'' +
                 ", postCode='" + postCode + '\'' +

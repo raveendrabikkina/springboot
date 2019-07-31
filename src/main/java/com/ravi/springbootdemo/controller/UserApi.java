@@ -14,10 +14,10 @@ import static com.ravi.springbootdemo.util.UserUtil.updateUserAttributes;
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @RestController
-public class DemoController {
+public class UserApi {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping(value = "/users", method = POST)
     public User createUser(@RequestBody User user) {

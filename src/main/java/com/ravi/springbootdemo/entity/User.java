@@ -3,15 +3,12 @@ package com.ravi.springbootdemo.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table
 @JsonIgnoreProperties
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer userId;
+public class User extends AbstractEntity implements Serializable {
     @Column
     private int age;
     @Column
@@ -21,13 +18,8 @@ public class User {
     @Column
     private String mobile;
 
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+    @Embedded
+    private Address address;
 
     public int getAge() {
         return age;
@@ -61,14 +53,22 @@ public class User {
         this.mobile = mobile;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
-                ", age=" + age +
+                "age=" + age +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", mobile='" + mobile + '\'' +
+                ", address=" + address +
                 '}';
     }
 }
