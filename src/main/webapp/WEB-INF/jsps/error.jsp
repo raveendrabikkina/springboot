@@ -4,18 +4,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Register User</title>
+    <title>User Summary</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
 </head>
 <body bgcolor="white">
 <div class="container">
-<div class="jumbotron text-center">
-<h1>User Registration</h1>
+<div class="jumbotron text-center alert alert-danger">
+<h1>${errorCode}</h1>
 </div>
-<form name="registerUser" action="register" method="post">
-<input type="submit" class="btn btn-primary btn-lg" name="Submit" value="Register">
-</form>
-<script type="text/javascript" src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="well well-lg">${errorMessage}</div>
 </div>
 </body>
 </html>
