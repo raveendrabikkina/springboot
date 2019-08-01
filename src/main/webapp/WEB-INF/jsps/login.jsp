@@ -8,16 +8,16 @@
     <title>User Login</title>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <div class="jumbotron text-center">
 <h1>Welcome to people directory</h1>
 </div>
 <form action="authenticate" method="post">
     <div>
-        <input type="text" name="userId" value="">
+        <input type="text" class="form-control" "name="userId" value="">
     </div>
     <div>
-        <input type="password" name="password" value="">
+        <input type="password" class="form-control" name="password" value="">
     </div>
     <div>
         <input type="submit" class="btn btn-primary btn-lg" value="Login">

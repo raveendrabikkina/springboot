@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
 </head>
 <body bgcolor="white">
-<div class="container">
+<div class="container-fluid">
 <form name="userSummary" action="editUser" method="post">
 <div class="jumbotron text-center">
 <h1>User Summary</h1>
