@@ -6,10 +6,16 @@
     <meta charset="utf-8">
     <title>User Summary</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <style>
+      .jumbotron {
+          padding: 0rem 0rem 2rem;
+      }
+  </style>
 </head>
 <body bgcolor="white">
 <div class="container">
 <form name="editUser" action="edit" method="post">
+<p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
 <div class="jumbotron text-center">
 <h1>Update User</h1>
 </div>
@@ -63,7 +69,9 @@
     <div class="form-group">
         <input name ="userId" type="hidden" class="form-control" value="${user.userId}"/>
     </div>
-    <input type="submit" class="btn btn-primary btn-lg" value="Update User"/>
+    <div class="text-center">
+        <input type="submit" class="btn btn-success" value="Update User"/>
+    </div>
 </div>
 </form>
 </body>

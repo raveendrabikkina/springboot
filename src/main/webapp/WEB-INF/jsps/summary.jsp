@@ -6,12 +6,18 @@
     <meta charset="utf-8">
     <title>User Summary</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+      .jumbotron {
+        padding: 0rem 0rem 2rem;
+      }
+    </style>
 </head>
 <body bgcolor="white">
 <div class="container">
 <form name="userSummary" action="editUser" method="post">
-<div class="jumbotron text-center">
-<h1>User Summary</h1>
+  <div class="jumbotron text-center ">
+    <p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
+    <h1>User Summary</h1>
 </div>
 <div class="text-center">
 <h4>Personal Information:</h4>
@@ -37,7 +43,9 @@
 <p><input name ="address.postCode" type="hidden" value="${user.address.postCode}"/></p>
 <p><input name ="address.state" type="hidden" value="${user.address.state}"/></p>
 <p><input name ="address.country" type="hidden" value="${user.address.country}"/></p>
-<input type="submit" class="btn btn-primary btn-lg" value="Edit User">
+<div class="text-center">
+  <input type="submit" class="btn btn-success" value="Edit User">
+</div>
 </div>
 <div>
 </div>

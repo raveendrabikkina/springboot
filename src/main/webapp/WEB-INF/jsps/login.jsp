@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
     <title>User Login</title>
+    <style>
+        .jumbotron {
+            padding: 0rem 0rem 2rem;
+        }
+    </style>
 </head>
 <body>
 <div class="container">

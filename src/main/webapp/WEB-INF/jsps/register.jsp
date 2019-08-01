@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <title>Register User</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+      .jumbotron {
+        padding: 0rem 0rem 2rem;
+      }
+    </style>
 </head>
 <body bgcolor="white">
 <div class="container">

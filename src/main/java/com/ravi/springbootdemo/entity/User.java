@@ -1,11 +1,16 @@
 package com.ravi.springbootdemo.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Proxy;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
+@Proxy(lazy = false)
 @Table
 @JsonIgnoreProperties
 public class User extends AbstractEntity implements Serializable {

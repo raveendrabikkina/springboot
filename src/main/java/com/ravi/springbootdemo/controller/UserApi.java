@@ -21,6 +21,7 @@ public class UserApi {
 
     @RequestMapping(value = "/users", method = POST)
     public User createUser(@RequestBody User user) {
+
         user.setUserId(null);
         return userService.addUSer(user);
     }
