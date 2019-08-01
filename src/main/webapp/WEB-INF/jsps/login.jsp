@@ -15,7 +15,7 @@
 <form action="authenticate" method="post">
   <div class="input-group">
     <div>
-        <input type="text" class="form-control" "name="userId" value="">
+        <input type="text" class="form-control" name="userId" value="">
     </div>
     <div>
         <input type="password" class="form-control" name="password" value="">
