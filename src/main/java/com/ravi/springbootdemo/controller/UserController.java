@@ -1,6 +1,5 @@
 package com.ravi.springbootdemo.controller;
 
-import com.ravi.springbootdemo.entity.Login;
 import com.ravi.springbootdemo.entity.User;
 import com.ravi.springbootdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
