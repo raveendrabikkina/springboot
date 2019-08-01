@@ -9,7 +9,7 @@
 <body bgcolor="white">
 <div class="container-fluid">
 <form name="editUser" action="edit" method="post">
-<div class="jumbotron text-center">
+<div class="jumbotron text-center input-group">
 <h1>Update User</h1>
 </div>
 <div>

@@ -13,6 +13,7 @@
 <h1>Welcome to people directory</h1>
 </div>
 <form action="authenticate" method="post">
+  <div class="input-group">
     <div>
         <input type="text" class="form-control" "name="userId" value="">
     </div>
@@ -22,6 +23,7 @@
     <div>
         <input type="submit" class="btn btn-primary btn-lg" value="Login">
     </div>
+  </div>
 </form>
 <script type="text/javascript" src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </div>
