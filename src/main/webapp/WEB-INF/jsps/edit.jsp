@@ -9,23 +9,60 @@
 <body bgcolor="white">
 <div class="container">
 <form name="editUser" action="edit" method="post">
-<div class="jumbotron text-center input-group">
+<div class="jumbotron text-center">
 <h1>Update User</h1>
 </div>
 <div>
-<p><input name ="firstName" type="text" class="form-control" value="${user.firstName}"/></p>
-<p><input name ="lastName" type="text" class="form-control" value="${user.lastName}"/></p>
-<p><input name ="age" type="text" class="form-control" value="${user.age}"/></p>
-<p><input name ="mobile" type="text" class="form-control" value="${user.mobile}"/></p>
-<h1>Address:</h1>
-<p><input name ="address.unit" type="text" class="form-control" value="${user.address.unit}"/></p>
-<p><input name ="address.street" type="text" class="form-control" value="${user.address.street}"/></p>
-<p><input name ="address.suburb" type="text" class="form-control" value="${user.address.suburb}"/></p>
-<p><input name ="address.postCode" type="text" class="form-control" value="${user.address.postCode}"/></p>
-<p><input name ="address.state" type="text" class="form-control" value="${user.address.state}"/></p>
-<p><input name ="address.country" type="text" class="form-control" value="${user.address.country}"/></p>
-<p><input name ="userId" type="hidden" value="${user.userId}"/></p>
-<p><input type="submit" class="btn btn-primary btn-lg" value="Update User"/></p>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" name="firstName" id="firstName" value="${user.firstName}">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" name="lastName" id="lastName" value="${user.lastName}">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="text" class="form-control" name="age" id="age" value="${user.age}">
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile:</label>
+      <input type="text" class="form-control" name="mobile" id="mobile" value="${user.mobile}">
+    </div>
+
+    <div class="form-group">
+      <label for="address.unit">Unit:</label>
+      <input type="text" class="form-control" name="address.unit" id="address.unit" value="${user.address.unit}">
+    </div>
+    <div class="form-group">
+      <label for="address.street">Street:</label>
+      <input type="text" class="form-control" name="address.street" id="address.street" value="${user.address.street}">
+    </div>
+
+    <div class="form-group">
+      <label for="address.suburb">Suburb:</label>
+      <input type="text" class="form-control" name="address.suburb" id="address.suburb" value="${user.address.suburb}">
+    </div>
+
+     <div class="form-group">
+       <label for="address.postCode">Post Code:</label>
+       <input type="text" class="form-control" name="address.postCode" id="address.postCode" value="${user.address.postCode}">
+     </div>
+
+      <div class="form-group">
+        <label for="address.state">State:</label>
+        <input type="text" class="form-control" name="address.state" id="address.state" value="${user.address.state}">
+      </div>
+
+    <div class="form-group">
+      <label for="address.country">Country:</label>
+      <input type="text" class="form-control" name="address.country" id="address.country" value="${user.address.country}">
+    </div>
+    <div class="form-group">
+        <input name ="userId" type="hidden" class="form-control" value="${user.userId}"/>
+    </div>
+    <input type="submit" class="btn btn-primary btn-lg" value="Update User"/>
 </div>
 </form>
 </body>

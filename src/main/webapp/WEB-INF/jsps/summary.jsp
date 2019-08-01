@@ -9,15 +9,16 @@
 <body bgcolor="white">
 <div class="container">
 <form name="userSummary" action="editUser" method="post">
-<div class="jumbotron text-center input-group">
+<div class="jumbotron text-center">
 <h1>User Summary</h1>
 </div>
-<div>
+<div class="text-center">
+<h4>Personal Information:</h4>
 <p>First Name: ${user.firstName}</p>
 <p>Last Name: ${user.lastName}</p>
 <p>Age: ${user.age}</p>
 <p>Mobile: ${user.mobile}</p>
-<h1>Address:</h1>
+<h4>Address:</h4>
 <p>Unit: ${user.address.unit}</p>
 <p>Street: ${user.address.street}</p>
 <p>Suburb: ${user.address.suburb}</p>
@@ -35,8 +36,10 @@
 <p><input name ="address.postCode" type="hidden" value="${user.address.postCode}"/></p>
 <p><input name ="address.state" type="hidden" value="${user.address.state}"/></p>
 <p><input name ="address.country" type="hidden" value="${user.address.country}"/></p>
+<input type="submit" class="btn btn-primary btn-lg" value="Edit User">
 </div>
-<div><input type="submit" class="btn btn-primary btn-lg" value="Edit User"></div>
+<div>
+</div>
 </form>
 <script type="text/javascript" src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </div>
