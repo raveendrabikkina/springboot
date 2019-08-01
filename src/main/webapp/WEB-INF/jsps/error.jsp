@@ -16,7 +16,8 @@
 <div class="container">
 <p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
 <div class="jumbotron text-center alert alert-danger">
-<h1>${errorCode}</h1>
+  <p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
+  <h1>${errorCode}</h1>
 </div>
 <div class="well well-lg">${errorMessage}</div>
 </div>

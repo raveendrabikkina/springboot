@@ -15,9 +15,9 @@
 <body bgcolor="white">
 <div class="container">
 <form name="editUser" action="edit" method="post">
-<p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
 <div class="jumbotron text-center">
-<h1>Update User</h1>
+    <p class="text-right"><a href="login" class="btn btn-danger">Logout</a></p>
+    <h1>Update User</h1>
 </div>
 <div>
     <div class="form-group">
