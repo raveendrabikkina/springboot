@@ -8,7 +8,7 @@
     <title>User Login</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
 <div class="jumbotron text-center">
 <h1>Welcome to people directory</h1>
 </div>
